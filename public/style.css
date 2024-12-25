@@ -1,0 +1,70 @@
+/* Background for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    background-size: cover;
+    color: #333;
+}
+
+/* Calculator container styling */
+.calculator {
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+/* Display input styling */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 6px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f7f7f7;
+}
+
+button:active {
+    background-color: #e0e0e0;
+    transform: translateY(2px);
+}
+
+button.zero {
+    grid-column: span 2;
+}
+button.c {
+    grid-column: span 2;
+}
